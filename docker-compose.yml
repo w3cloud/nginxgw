@@ -1,0 +1,14 @@
+version: '3'
+services:
+  nginxgwsvc:
+    image: nginxgw
+    container_name: nginxgw
+    ports:
+      - 80:80
+      - 443:443
+    environment:
+      TZ : America/New_York
+    volumes:
+      - ./sites:/var/www/sites
+      - ./sites-enabled:/etc/nginx/sites-enabled
+      - ./letsencrypt:/etc/letsencrypt

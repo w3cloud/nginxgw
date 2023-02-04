@@ -1,0 +1,1 @@
+docker exec -it nginxgw /bin/sh -c "/etc/w3cloud/cb.sh $1"
