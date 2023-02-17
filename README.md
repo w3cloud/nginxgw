@@ -1,6 +1,6 @@
 # Nginx gateway
 * Ubuntu, Nginx, Lets encrypt bundle
-* One nginx ubuntu can handle multiple sites.
+* One nginx ubuntu can handle multiple sites or reverse proxies.
 * Feel free to fork and use it.
 
 ### Instructions
