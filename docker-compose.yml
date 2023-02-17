@@ -3,6 +3,8 @@ services:
   nginxgwsvc:
     image: nginxgw
     container_name: nginxgw
+    networks:
+      - net1
     ports:
       - 80:80
       - 443:443
@@ -12,3 +14,6 @@ services:
       - ./data/sites:/var/www/sites
       - ./data/sites-enabled:/etc/nginx/sites-enabled
       - ./data/letsencrypt:/etc/letsencrypt
+networks:
+  net1:
+    driver: bridge
