@@ -9,6 +9,6 @@ services:
     environment:
       TZ : America/New_York
     volumes:
-      - ./sites:/var/www/sites
-      - ./sites-enabled:/etc/nginx/sites-enabled
-      - ./letsencrypt:/etc/letsencrypt
+      - ./data/sites:/var/www/sites
+      - ./data/sites-enabled:/etc/nginx/sites-enabled
+      - ./data/letsencrypt:/etc/letsencrypt

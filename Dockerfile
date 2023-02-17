@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 RUN apt -y update 
 RUN apt -y install nginx
 EXPOSE 80:80
