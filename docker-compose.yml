@@ -17,3 +17,4 @@ services:
 networks:
   net1:
     driver: bridge
+    name: net1
