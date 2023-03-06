@@ -5,6 +5,8 @@ services:
     container_name: nginxgw
     networks:
       - net1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - 80:80
       - 443:443
